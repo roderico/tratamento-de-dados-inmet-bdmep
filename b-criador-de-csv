@@ -1,0 +1,201 @@
+#!/usr/bin/env bash
+# Criador de cabeçalho para arquivos de dados completos do BDMEP.
+# Script para criar arquivos de acordo com o mês e o ano. Agregará
+# informação de várias estações diferentes em um mesmo arquivo a
+# partir de um BD que concentre toda a informação _ nesse caso, $ARQ
+
+# Depende do zzfunções:
+zzarrumanome=$( echo ~/BIN/scripts/funcoeszz zzarrumanome )
+
+ARQ='BaseDeDados.txt'
+
+# $ARQ possui TODOS os dados de todas as estações.
+# grep busca a linha toda que contenha o padrão ';DD/MM/AAAA;'
+# esse tr  '.' ','  deve, futuramente ser feito diretamente no $ARQ original e
+# não nesse script, diminuindo brutalmente o trabalho do computador
+# Futuramente isso tem de ser modificado... =S
+grep ';31/01/2004;' $ARQ | tr '.' ',' >>Janeiro2004.csv
+grep ';29/02/2004' $ARQ | tr '.' ',' >>Fevereiro2004.csv
+grep ';31/03/2004' $ARQ | tr '.' ',' >>Marco2004.csv
+grep ';30/04/2004' $ARQ | tr '.' ',' >>Abril2004.csv 
+grep ';31/05/2004' $ARQ | tr '.' ',' >>Maio2004.csv
+grep ';30/06/2004' $ARQ | tr '.' ',' >>Junho2004.csv  
+grep ';31/07/2004' $ARQ | tr '.' ',' >>Julho2004.csv
+grep ';31/08/2004' $ARQ | tr '.' ',' >>Agosto2004.csv
+grep ';30/09/2004' $ARQ | tr '.' ',' >>Setembro2004.csv
+grep ';31/10/2004' $ARQ | tr '.' ',' >>Outubro2004.csv
+grep ';30/11/2004' $ARQ | tr '.' ',' >>Novembro2004.csv
+grep ';31/12/2004' $ARQ | tr '.' ',' >>Dezembro2004.csv
+grep ';31/01/2005' $ARQ | tr '.' ',' >>Janeiro2005.csv
+grep ';28/02/2005' $ARQ | tr '.' ',' >>Fevereiro2005.csv
+grep ';31/03/2005' $ARQ | tr '.' ',' >>Marco2005.csv
+grep ';30/04/2005' $ARQ | tr '.' ',' >>Abril2005.csv
+grep ';31/05/2005' $ARQ | tr '.' ',' >>Maio2005.csv
+grep ';30/06/2005' $ARQ | tr '.' ',' >>Junho2005.csv
+grep ';31/07/2005' $ARQ | tr '.' ',' >>Julho2005.csv
+grep ';31/08/2005' $ARQ | tr '.' ',' >>Agosto2005.csv
+grep ';30/09/2005' $ARQ | tr '.' ',' >>Setembro2005.csv
+grep ';31/10/2005' $ARQ | tr '.' ',' >>Outubro2005.csv
+grep ';30/11/2005' $ARQ | tr '.' ',' >>Novembro2005.csv
+grep ';31/12/2005' $ARQ | tr '.' ',' >>Dezembro2005.csv
+grep ';31/01/2006' $ARQ | tr '.' ',' >>Janeiro2006.csv
+grep ';28/02/2006' $ARQ | tr '.' ',' >>Fevereiro2006.csv
+grep ';31/03/2006' $ARQ | tr '.' ',' >>Marco2006.csv
+grep ';30/04/2006' $ARQ | tr '.' ',' >>Abril2006.csv
+grep ';31/05/2006' $ARQ | tr '.' ',' >>Maio2006.csv
+grep ';30/06/2006' $ARQ | tr '.' ',' >>Junho2006.csv
+grep ';31/07/2006' $ARQ | tr '.' ',' >>Julho2006.csv
+grep ';31/08/2006' $ARQ | tr '.' ',' >>Agosto2006.csv
+grep ';30/09/2006' $ARQ | tr '.' ',' >>Setembro2006.csv
+grep ';31/10/2006' $ARQ | tr '.' ',' >>Outubro2006.csv
+grep ';30/11/2006' $ARQ | tr '.' ',' >>Novembro2006.csv
+grep ';31/12/2006' $ARQ | tr '.' ',' >>Dezembro2006.csv
+grep ';31/01/2007' $ARQ | tr '.' ',' >>Janeiro2007.csv
+grep ';28/02/2007' $ARQ | tr '.' ',' >>Fevereiro2007.csv
+grep ';31/03/2007' $ARQ | tr '.' ',' >>Marco2007.csv
+grep ';30/04/2007' $ARQ | tr '.' ',' >>Abril2007.csv
+grep ';31/05/2007' $ARQ | tr '.' ',' >>Maio2007.csv
+grep ';30/06/2007' $ARQ | tr '.' ',' >>Junho2007.csv
+grep ';31/07/2007' $ARQ | tr '.' ',' >>Julho2007.csv
+grep ';31/08/2007' $ARQ | tr '.' ',' >>Agosto2007.csv
+grep ';30/09/2007' $ARQ | tr '.' ',' >>Setembro2007.csv
+grep ';31/10/2007' $ARQ | tr '.' ',' >>Outubro2007.csv
+grep ';30/11/2007' $ARQ | tr '.' ',' >>Novembro2007.csv
+grep ';31/12/2007' $ARQ | tr '.' ',' >>Dezembro2007.csv
+grep ';31/01/2008' $ARQ | tr '.' ',' >>Janeiro2008.csv
+grep ';29/02/2008' $ARQ | tr '.' ',' >>Fevereiro2008.csv
+grep ';31/03/2008' $ARQ | tr '.' ',' >>Marco2008.csv
+grep ';30/04/2008' $ARQ | tr '.' ',' >>Abril2008.csv
+grep ';31/05/2008' $ARQ | tr '.' ',' >>Maio2008.csv
+grep ';30/06/2008' $ARQ | tr '.' ',' >>Junho2008.csv
+grep ';31/07/2008' $ARQ | tr '.' ',' >>Julho2008.csv
+grep ';31/08/2008' $ARQ | tr '.' ',' >>Agosto2008.csv
+grep ';30/09/2008' $ARQ | tr '.' ',' >>Setembro2008.csv
+grep ';31/10/2008' $ARQ | tr '.' ',' >>Outubro2008.csv
+grep ';30/11/2008' $ARQ | tr '.' ',' >>Novembro2008.csv
+grep ';31/12/2008' $ARQ | tr '.' ',' >>Dezembro2008.csv
+grep ';31/01/2009' $ARQ | tr '.' ',' >>Janeiro2009.csv
+grep ';28/02/2009' $ARQ | tr '.' ',' >>Fevereiro2009.csv
+grep ';31/03/2009' $ARQ | tr '.' ',' >>Marco2009.csv
+grep ';30/04/2009' $ARQ | tr '.' ',' >>Abril2009.csv
+grep ';31/05/2009' $ARQ | tr '.' ',' >>Maio2009.csv
+grep ';30/06/2009' $ARQ | tr '.' ',' >>Junho2009.csv
+grep ';31/07/2009' $ARQ | tr '.' ',' >>Julho2009.csv
+grep ';31/08/2009' $ARQ | tr '.' ',' >>Agosto2009.csv
+grep ';30/09/2009' $ARQ | tr '.' ',' >>Setembro2009.csv
+grep ';31/10/2009' $ARQ | tr '.' ',' >>Outubro2009.csv
+grep ';30/11/2009' $ARQ | tr '.' ',' >>Novembro2009.csv
+grep ';31/12/2009' $ARQ | tr '.' ',' >>Dezembro2009.csv
+grep ';31/01/2010' $ARQ | tr '.' ',' >>Janeiro2010.csv
+grep ';28/02/2010' $ARQ | tr '.' ',' >>Fevereiro2010.csv
+grep ';31/03/2010' $ARQ | tr '.' ',' >>Marco2010.csv
+grep ';30/04/2010' $ARQ | tr '.' ',' >>Abril2010.csv
+grep ';31/05/2010' $ARQ | tr '.' ',' >>Maio2010.csv
+grep ';30/06/2010' $ARQ | tr '.' ',' >>Junho2010.csv
+grep ';31/07/2010' $ARQ | tr '.' ',' >>Julho2010.csv
+grep ';31/08/2010' $ARQ | tr '.' ',' >>Agosto2010.csv
+grep ';30/09/2010' $ARQ | tr '.' ',' >>Setembro2010.csv
+grep ';31/10/2010' $ARQ | tr '.' ',' >>Outubro2010.csv
+grep ';30/11/2010' $ARQ | tr '.' ',' >>Novembro2010.csv
+grep ';31/12/2010' $ARQ | tr '.' ',' >>Dezembro2010.csv
+grep ';31/01/2011' $ARQ | tr '.' ',' >>Janeiro2011.csv
+grep ';28/02/2011' $ARQ | tr '.' ',' >>Fevereiro2011.csv
+grep ';31/03/2011' $ARQ | tr '.' ',' >>Marco2011.csv
+grep ';30/04/2011' $ARQ | tr '.' ',' >>Abril2011.csv
+grep ';31/05/2011' $ARQ | tr '.' ',' >>Maio2011.csv
+grep ';30/06/2011' $ARQ | tr '.' ',' >>Junho2011.csv
+grep ';31/07/2011' $ARQ | tr '.' ',' >>Julho2011.csv
+grep ';31/08/2011' $ARQ | tr '.' ',' >>Agosto2011.csv
+grep ';30/09/2011' $ARQ | tr '.' ',' >>Setembro2011.csv
+grep ';31/10/2011' $ARQ | tr '.' ',' >>Outubro2011.csv
+grep ';30/11/2011' $ARQ | tr '.' ',' >>Novembro2011.csv
+grep ';31/12/2011' $ARQ | tr '.' ',' >>Dezembro2011.csv
+grep ';31/01/2012' $ARQ | tr '.' ',' >>Janeiro2012.csv
+grep ';29/02/2012' $ARQ | tr '.' ',' >>Fevereiro2012.csv
+grep ';31/03/2012' $ARQ | tr '.' ',' >>Marco2012.csv
+grep ';30/04/2012' $ARQ | tr '.' ',' >>Abril2012.csv
+grep ';31/05/2012' $ARQ | tr '.' ',' >>Maio2012.csv
+grep ';30/06/2012' $ARQ | tr '.' ',' >>Junho2012.csv
+grep ';31/07/2012' $ARQ | tr '.' ',' >>Julho2012.csv
+grep ';31/08/2012' $ARQ | tr '.' ',' >>Agosto2012.csv
+grep ';30/09/2012' $ARQ | tr '.' ',' >>Setembro2012.csv
+grep ';31/10/2012' $ARQ | tr '.' ',' >>Outubro2012.csv
+grep ';30/11/2012' $ARQ | tr '.' ',' >>Novembro2012.csv
+grep ';31/12/2012' $ARQ | tr '.' ',' >>Dezembro2012.csv
+grep ';31/01/2013' $ARQ | tr '.' ',' >>Janeiro2013.csv
+grep ';28/02/2013' $ARQ | tr '.' ',' >>Fevereiro2013.csv
+grep ';31/03/2013' $ARQ | tr '.' ',' >>Marco2013.csv
+grep ';30/04/2013' $ARQ | tr '.' ',' >>Abril2013.csv
+grep ';31/05/2013' $ARQ | tr '.' ',' >>Maio2013.csv
+grep ';30/06/2013' $ARQ | tr '.' ',' >>Junho2013.csv
+grep ';31/07/2013' $ARQ | tr '.' ',' >>Julho2013.csv
+grep ';31/08/2013' $ARQ | tr '.' ',' >>Agosto2013.csv
+grep ';30/09/2013' $ARQ | tr '.' ',' >>Setembro2013.csv
+grep ';31/10/2013' $ARQ | tr '.' ',' >>Outubro2013.csv
+grep ';30/11/2013' $ARQ | tr '.' ',' >>Novembro2013.csv
+grep ';31/12/2013' $ARQ | tr '.' ',' >>Dezembro2013.csv
+grep ';31/01/2014' $ARQ | tr '.' ',' >>Janeiro2014.csv
+grep ';28/02/2014' $ARQ | tr '.' ',' >>Fevereiro2014.csv
+grep ';31/03/2014' $ARQ | tr '.' ',' >>Marco2014.csv
+grep ';30/04/2014' $ARQ | tr '.' ',' >>Abril2014.csv
+grep ';31/05/2014' $ARQ | tr '.' ',' >>Maio2014.csv
+grep ';30/06/2014' $ARQ | tr '.' ',' >>Junho2014.csv
+grep ';31/07/2014' $ARQ | tr '.' ',' >>Julho2014.csv
+grep ';31/08/2014' $ARQ | tr '.' ',' >>Agosto2014.csv
+grep ';30/09/2014' $ARQ | tr '.' ',' >>Setembro2014.csv
+grep ';31/10/2014' $ARQ | tr '.' ',' >>Outubro2014.csv
+grep ';30/11/2014' $ARQ | tr '.' ',' >>Novembro2014.csv
+grep ';31/12/2014' $ARQ | tr '.' ',' >>Dezembro2014.csv
+grep ';31/01/2015' $ARQ | tr '.' ',' >>Janeiro2015.csv
+grep ';28/02/2015' $ARQ | tr '.' ',' >>Fevereiro2015.csv
+grep ';31/03/2015' $ARQ | tr '.' ',' >>Marco2015.csv
+echo -e "Todos os arquivos gripados foram criados!\n"
+
+# Lista invertida (r) -1 por linha, organiza por tempo de criação
+j=0
+for i in $( ls -1r --sort=time *.csv); do
+	# nomeia num_Mes & Mes:
+	let j++;
+	# Renomeando:
+	mv $i $j-$i; # não pude colocar underline no nome... =/
+	echo -e "\nMês $i feito!"
+	# 12: número de meses:
+	if [ $j -eq 12 ]; then j=0; fi
+	done
+
+# Arruma o nome:
+bash -e $zzarrumanome *.csv
+######################## ###################################
+# Criar um diretório para cada ano:
+criaDir() {              
+echo -e "Digite o ano de início dos dados:\t:"
+read ano_1 # leia a resposta do usuário
+echo -e "Digite o ano final dos dados:\t:"
+read ano_2 # leia a resposta do usuário
+                          
+# Testando se tenho permissão de escrita no diretório atual:
+if [ -w $PWD ]; then      
+# Testando se ano_1 é menor que ano_2. Ou se são iguais.
+	if [ $ano_1 -lt $ano_2 ] || [ $ano_1 -eq $ano_2 ]; then
+		for i in $( seq $ano_1  $ano_2 ); do
+			mkdir $i
+			mv  *$i.csv $i 
+			done
+	else echo "Seu ano inicial é maior que o final. Quer tentar de novo? (s/N)"
+		read resp
+		if [ $resp = s ] || [ $resp = S ] || [ $resp = sim ] || [ $resp = Sim ] || [ $resp = SIM ] ; then
+		 # chama novamente a função criaDir
+		 criaDir
+		else    
+			  echo "Terminando" && exit 0
+		fi        
+	fi
+else echo "Parece que você não possui permissão de escrita neste diretório! Terminando." && exit 0
+fi    
+}                         
+##############################################################
+
+criaDir # chamando a função acima.
+
+##############################################################
+exit 0

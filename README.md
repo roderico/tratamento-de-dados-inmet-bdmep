@@ -2,6 +2,8 @@
 Shell Scripts para limpeza de dados dos arquivos gerados pelo site inmet-bdmep de meteorologia (pt-br)
 São scripts que fazem mais sentido quando se trabalha com quantidade brutal de dados do bdmep.
 
+Eles AINDA NÃO ESTÃO INTEGRADOS ENTRE SI!
+
 Script A: recodifica do formato do site para UTF-8 (se não estiver ainda nesse formato) usando o iconv.
 Depois ele coloca os dados de Nome da Localidade/Lat/Long/Altit na frente dos dados do arquivo, repetidamente em todas as linhas.
 Depois apaga linhas em branco e tags ("lixo") e gera um único arquivo de banco de dados a partir de TODOS os arquivos *txt do diretório atual.

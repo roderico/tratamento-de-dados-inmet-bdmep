@@ -13,5 +13,4 @@ Depois cria diretórios segundo os anos digitados pelo utilizador e envia os CSV
 
 Script C: Seleciona dos CSVs apenas as datas que possuem os dados X/Y/Z. Exemplo: se não possui Precipitação Total, aquela data daquela estação NÃO SERÁ copiada para o novo CSV. Por enquanto está "estático". Seria melhor no futuro esse passo estar no Script B.
 Depois coloca o cabeçalho original no topo do arquivo.
-O controle de tempo de execução desse script é porque na 1ª execução que fi dele, demorou mais de 4 horas (bastante arquivos; mesmo assim estava lento demais). Porém fiz alguma modificação que deu um up na velocidade dele.
-
+O controle de tempo de execução desse script é porque na 1ª execução que fiz dele, demorou mais de 4 horas (bastante arquivos; mesmo assim estava lento demais). Porém fiz modificação que pode ser que torne esse controle inútil no futuro.

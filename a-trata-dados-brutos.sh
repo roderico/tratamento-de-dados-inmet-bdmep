@@ -5,7 +5,7 @@
 # NOME: 				A-GeraBD_inmet									#
 # CRIADO EM:			19 de Junho de 2015 							#
 # ULTIMA ATUALIZAÇÃO:	11 de Agosto de 2015							#
-# AUTORE(S):	Rodrigo Leite Valentin <superantigo (a) gmail.com>		#
+# AUTORE(S):	R. VALENTIN-DE-SOUZA <superantigo (a) gmail.com>		#
 # DEPENDÊNCIA(S):		funçõeszz ( http://funcoeszz.net )				#
 ######## DESCRIÇÃO ######################################################
 #																		#

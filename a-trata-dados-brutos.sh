@@ -17,7 +17,7 @@
 # Copyright 2015 Rodrigo Leite Valentin de Souza						#
 #  <superantigo (a) gmail.com>											#
 #              															#
-# LICENÇA    : GPLv3													#
+# LICENÇA    : GPLv2													#
 #																		#
 #  																		#
 #  This program is free software; you can redistribute it and/or modify	#
